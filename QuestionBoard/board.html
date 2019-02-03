@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question Board</title>
+    <link rel="icon" type="image/ico" href="../logo3.png" />
+    <link rel="stylesheet" type="text/css" href="board.css" />
+  </head>
+
+  <body>
+
+  <a href="../index.html"><img src="../header.png"></a>
+
+    <ul>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Course Games</a>
+        <div class="dropdown-content">
+          <a href="../GameStuff/game1/game1.html">Course 1</a>
+          <a href="../GameStuff/game2/game2.html">Course 2</a>
+          <a href="../GameStuff/game3/game3.html">Course 3</a>
+        </div>
+      </li>
+      <li><a href="">Questions Board</a></li>
+      <li><a href="">Career Link</a></li>
+      <li><a href="../Points/points.html">Points Tracker</a></li>
+    </ul>
+
+    <p>
+
+<h2>Question Submission</h2>
+<p>Ask questions at any time regarding course content.</p>
+
+<div class="container">
+    <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="course">Course</label>
+      </div>
+      <div class="col-75">
+        <select id="course" name="course">
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="English">English</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="question">Question</label>
+      </div>
+      <div class="col-75">
+        <textarea id="question" name="question" placeholder="Ask something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+
+
+    </div>
+  </form>
+</div>
+<button onclick="myFunction()">Submit</button>
+<h2>Question Board</h2>
+
+
+
+
+<script language="javascript" type="text/javascript" src="board.js"></script>
+</body>
+
+  <script>
+  function myFunction() {
+    var ok = true;
+
+    if (ok === true) {
+          var div = document.createElement('div');
+          a = document.getElementById('question');
+          var t = document.createTextNode(a.value);
+          div.className = 'container';
+          div.appendChild(t)
+       document.getElementsByTagName('body')[0].appendChild(div);
+    }
+  }
+</script></script>
+</html>

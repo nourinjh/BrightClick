@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Science Game</title>
+    <link rel="icon" type="image/ico" href="../../logo3.png" />
+    <link rel="stylesheet" type="text/css" href="game2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <a href="../../index.html"><img src="../../header.png"></a>
+    
+      <!--------------------
+        navigation bar code
+      ---------------------->
+      <ul>
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Course Games</a>
+          <div class="dropdown-content">
+            <a href="../game1/game1.html">Math Game</a>
+            <a href="game2.html">Science Game</a>
+            <a href="../game3/game3.html">English Game</a>
+          </div>
+        </li>
+        <li><a href="../../QuestionBoard/board.html">Questions Board</a></li>
+        <li><a href="">Career Link</a></li>
+        <li><a href="../../Points/points.html">Points Tracker</a></li>
+      </ul>
+  
+      <p>
+   
+      <form id="quiz" name="quiz">
+          <!-- <input id="button" type="button" value="Start Quiz" onclick="start();" />
+          <div id="after_submit"> -->
+      
+        <p>1. What's the acceleration due to gravity? (to 2 decimal places)</p>
+        <input id="textbook" type="text" name="q1" />
+
+        <p>2. It takes 2 cups of water for every one cup of flower, how many cups of water would be needed if you had 5 cups of flour?</p>
+
+        <input type="radio" name="q2" value="1" />5<br />
+        <input type="radio" name="q2" value="2" /> 1<br />
+        <input type="radio" name="q2" value="ans" /> 10 <br />
+        <input type="radio" name="q2" value="3" /> 12 <br />
+
+        <img src="heart.png">
+
+        <p>3. What's the part of the heart shown above?</p>
+        <input id="textbook" type="text" name="q3" /><br>
+
+        
+        <input
+          id="button"
+          type="button"
+          value="I'm finished!"
+          onclick="check();"
+        />
+      </form>
+    
+    <div id="quiz">
+    <div id="after_submit">
+      <p id = "message"></p>
+      <p id="number_correct"></p>
+    </div>
+    </div>
+  <!-- </div> -->
+
+    <script language="javascript" type="text/javascript" src="game2.js"></script>
+  </body>
+</html>

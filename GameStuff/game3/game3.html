@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>English Game</title>
+    <link rel="icon" type="image/ico" href="../../logo3.png" />
+    <link rel="stylesheet" type="text/css" href="game3.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <a href="../../index.html"><img src="../../header.png"></a>
+    
+      <!--------------------
+        navigation bar code
+      ---------------------->
+      <ul>
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Course Games</a>
+          <div class="dropdown-content">
+            <a href="../game1/game1.html">Math Game</a>
+            <a href="../game2/game2.html">Science Game</a>
+            <a href="game3.html">English Game</a>
+          </div>
+        </li>
+        <li><a href="../../QuestionBoard/board.html">Questions Board</a></li>
+        <li><a href="">Career Link</a></li>
+        <li><a href="../../Points/points.html">Points Tracker</a></li>
+      </ul>
+  
+      <p>
+   
+      <form id="quiz" name="quiz">
+          <!-- <input id="button" type="button" value="Start Quiz" onclick="start();" />
+          <div id="after_submit"> -->
+      
+        <p>1. Fill in the blank. "I don't have ______ time today but I'll do it by the end of the week".</p>
+
+        <input type="radio" name="q1" value="3" />long<br />
+        <input type="radio" name="q1" value="2" /> some<br />
+        <input type="radio" name="q1" value="1" /> all <br />
+        <input type="radio" name="q1" value="ans" /> much <br />
+
+        <p>2. Who wrote "The Tell-Tale Heart"?</p>
+        <input id="textbook" type="text" name="q2" />
+
+        <p>3. What is the unnecessary puntuation in the following statement? "The weather this winter has been: windy, wet, and unpredictable".</p>
+        <input id="textbook" type="text" name="q3" /><br>
+
+        
+        <input
+          id="button"
+          type="button"
+          value="I'm finished!"
+          onclick="check();"
+        />
+      </form>
+    
+    <div id="quiz">
+    <div id="after_submit">
+      <p id = "message"></p>
+      <p id="number_correct"></p>
+    </div>
+    </div>
+  <!-- </div> -->
+
+    <script language="javascript" type="text/javascript" src="game3.js"></script>
+  </body>
+</html>
